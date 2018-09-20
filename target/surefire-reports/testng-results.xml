@@ -2,36 +2,36 @@
 <testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-09-19T21:14:34Z" name="Suite" finished-at="2018-09-19T21:14:56Z" duration-ms="22095">
+  <suite started-at="2018-09-20T15:25:30Z" name="Suite" finished-at="2018-09-20T15:25:53Z" duration-ms="22830">
     <groups>
     </groups>
-    <test started-at="2018-09-19T21:14:34Z" name="Test" finished-at="2018-09-19T21:14:56Z" duration-ms="22095">
+    <test started-at="2018-09-20T15:25:30Z" name="Test" finished-at="2018-09-20T15:25:53Z" duration-ms="22830">
       <class name="com.amazondemo.AmazonTestCases">
-        <test-method is-config="true" signature="executeBeforeASuite()[pri:0, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:34Z" name="executeBeforeASuite" finished-at="2018-09-19T16:14:34Z" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="executeBeforeASuite()[pri:0, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:30Z" name="executeBeforeASuite" finished-at="2018-09-20T10:25:30Z" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeBeforeASuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:34Z" name="setup" finished-at="2018-09-19T16:14:41Z" duration-ms="7631" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:30Z" name="setup" finished-at="2018-09-20T10:25:35Z" duration-ms="5409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearch()[pri:1, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:41Z" name="verifySearch" finished-at="2018-09-19T16:14:46Z" duration-ms="4845" status="PASS">
+        <test-method signature="verifySearch()[pri:1, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:36Z" name="verifySearch" finished-at="2018-09-20T10:25:41Z" duration-ms="5256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearch -->
-        <test-method signature="SelectItem()[pri:2, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:46Z" name="SelectItem" finished-at="2018-09-19T16:14:52Z" duration-ms="6113" status="PASS">
+        <test-method signature="SelectItem()[pri:2, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:41Z" name="SelectItem" finished-at="2018-09-20T10:25:49Z" duration-ms="7984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectItem -->
-        <test-method signature="addtocart()[pri:3, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:52Z" name="addtocart" finished-at="2018-09-19T16:14:53Z" duration-ms="984" status="PASS">
+        <test-method signature="addtocart()[pri:3, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:49Z" name="addtocart" finished-at="2018-09-20T10:25:50Z" duration-ms="921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtocart -->
-        <test-method signature="removeItem()[pri:4, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:53Z" name="removeItem" finished-at="2018-09-19T16:14:56Z" duration-ms="2486" status="PASS">
+        <test-method signature="removeItem()[pri:4, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:50Z" name="removeItem" finished-at="2018-09-20T10:25:53Z" duration-ms="3237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeItem -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-19T16:14:56Z" name="cleanup" finished-at="2018-09-19T16:14:56Z" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.amazondemo.AmazonTestCases@71809907]" started-at="2018-09-20T10:25:53Z" name="cleanup" finished-at="2018-09-20T10:25:53Z" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->

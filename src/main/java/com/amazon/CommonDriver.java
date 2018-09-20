@@ -10,6 +10,8 @@ public class CommonDriver {
 	private int pageloadTimeout;
 	private int elementDetectionTimeout;
 
+	//Methods to set pageload timeout and element detection timeout
+	
 	public void setPageloadTimeout(int pageloadTimeout) {
 		this.pageloadTimeout = pageloadTimeout;
 	}
@@ -18,10 +20,12 @@ public class CommonDriver {
 		this.elementDetectionTimeout = elementDetectionTimeout;
 	}
 
+	//To return the WebDriver instance
 	public WebDriver getDriver() {
 		return driver;
 	}
 
+	// Invoke CommonDriver constructor
 	public CommonDriver(String browserType)  {
 
 		browserType = browserType.trim();
@@ -37,6 +41,7 @@ public class CommonDriver {
 
 	}
 
+	//Method to delete all cookies , maximize and invoke the browser
 	public void navigateToFirstUrl(String url) throws Exception {
 
 		url = url.trim();
@@ -51,17 +56,20 @@ public class CommonDriver {
 		driver.get(url);
 	}
 
+	//Method to get title of the page
 	public String getTitle() throws Exception {
 
 		return driver.getTitle();
 	}
 
+	//Method to close the current browser
 	public void closeBrowser() throws Exception {
 		if (driver != null) {
 			driver.close();
 		}
 
 	}
+	//Method to close all browsers
 	public void closeAllBrowsers() throws Exception {
 		if(driver != null){
 			driver.quit();

@@ -7,7 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtility {
 	
-
+// Create a method for explicit wait till the element is visible
+	
 public static void waitTillElementVisible(WebDriver driver, By by, int timeoutInSeconds){
 		
 		WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);

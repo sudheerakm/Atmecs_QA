@@ -24,7 +24,8 @@ public class BaseScenarios {
 	public void executeBeforeASuite() {
 
 		try {
-			System.out.println("Inside bef suite");
+			System.out.println("Inside before suite");
+			//Read the property file
 			configProperty = ConfigReader
 					.readProperties("/Users/mangalakasturi/workspace/AmazonProject/config.properties");
 
@@ -39,19 +40,34 @@ public class BaseScenarios {
 	@BeforeClass
 	public void setup() {
 		try {
+			//Get the browser type from property file
 			String browsertype = configProperty.getProperty("browserType");
+			
+			//Get the base URL from property file
 			String url = configProperty.getProperty("baseURL");
+			
+			//Initialize the common driver parameterized constructor
 			cmnDriver = new CommonDriver(browsertype);
+			
+			//Set pageload timeout
 			int pageloadTimeout = Integer.parseInt(configProperty.getProperty("pageLoadTimeout"));
 			cmnDriver.setPageloadTimeout(pageloadTimeout);
+			
+			//Set element detection timeout
 			int elementDetectionTimeout = Integer.parseInt(configProperty.getProperty("elementDetectionTimeout"));
 			cmnDriver.setElementDetectionTimeout(elementDetectionTimeout);
+			
 			System.out.println(url);
+			
+			// Navigate to the amazon url
 			cmnDriver.navigateToFirstUrl(url);
-			//System.out.println("Inside setup");
+			
+			
+			//get the commonDriver instance
 			driver = cmnDriver.getDriver();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
+			e.getMessage();
 			e.printStackTrace();
 		}
 
@@ -60,6 +76,7 @@ public class BaseScenarios {
 	@AfterSuite
 	public void cleanup() {
 		try {
+			//Close all the browsers
 			cmnDriver.closeAllBrowsers();
 		} catch (Exception e) {
 
